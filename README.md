@@ -11,13 +11,52 @@ This project allows you to check the HTTP status codes of URLs listed in a text 
 
 ## Prerequisites
 
-- Python 3.x installed on your machine.
-- The `curl` command should be available in your terminal (pre-installed on most UNIX systems).
+Before you start, make sure you have the following:
+
+1. **Python 3.x** installed on your machine.
+   - To check if you have Python installed, run the command:
+     ```bash
+     python3 --version
+     ```
+   - If you don’t have Python 3.x, you can install it from [the official Python website](https://www.python.org/downloads/).
+
+2. **curl** installed on your system.
+   - `curl` is used by the script to send HTTP requests and check the status codes.
+   - If `curl` is not installed, you can install it with the following command (on Debian/Ubuntu systems):
+     ```bash
+     sudo apt install curl
+     ```
 
 ## Installation
 
-1. Clone this repository or download the Python script to your machine.
+Follow these steps to install and set up the project:
+
+1. **Clone the repository or download the script**:
+   - To clone the repository, run:
+     ```bash
+     git clone <REPOSITORY_URL>
+     cd <project_directory>
+     ```
+
+2. **Install the required Python dependencies**:
+   - Make sure you are in the project directory where `requirements.txt` is located.
+   - Install the dependencies using pip:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+## Usage
+
+Once the setup is complete, follow these steps to use the script:
+
+### 1. Create a text file (`links.txt`) containing the URLs you want to test, one URL per line.
+
+Example content for `links.txt`:
+
+
+### 2. Run the Python script to check the status codes of the URLs.
+
+Run the following command in your terminal:
 
 ```bash
-git clone <REPOSITORY_URL>
-cd <project_directory>
+python3 check_status.py
