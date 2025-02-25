@@ -38,12 +38,6 @@ Follow these steps to install and set up the project:
      cd <project_directory>
      ```
 
-2. **Install the required Python dependencies**:
-   - Make sure you are in the project directory where `requirements.txt` is located.
-   - Install the dependencies using pip:
-     ```bash
-     pip install -r requirements.txt
-     ```
 
 ## Usage
 
